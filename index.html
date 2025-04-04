@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Kids School - Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Happy Kids School</h1>
+            <p>Join Our Learning Journey!</p>
+        </div>
+
+        <form id="admissionForm">
+            <section class="form-section" id="studentDetails">
+                <h2>Student Details</h2>
+                <div class="input-group">
+                    <label for="studentFirstName">First Name:</label>
+                    <input type="text" id="studentFirstName" name="studentFirstName" required>
+                </div>
+                <div class="input-group">
+                    <label for="studentLastName">Last Name:</label>
+                    <input type="text" id="studentLastName" name="studentLastName" required>
+                </div>
+                <div class="input-group">
+                    <label for="studentBirthDate">Date of Birth:</label>
+                    <input type="date" id="studentBirthDate" name="studentBirthDate" required>
+                </div>
+                <div class="input-group">
+                    <label for="studentGender">Gender:</label>
+                    <select id="studentGender" name="studentGender" required>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="form-section" id="parentDetails">
+                <h2>Parent/Guardian Details</h2>
+                <div class="input-group">
+                    <label for="parentFullName">Full Name:</label>
+                    <input type="text" id="parentFullName" name="parentFullName" required>
+                </div>
+                <div class="input-group">
+                    <label for="parentEmailAddress">Email:</label>
+                    <input type="email" id="parentEmailAddress" name="parentEmailAddress" required>
+                </div>
+                <div class="input-group">
+                    <label for="parentPhoneNumber">Phone Number:</label>
+                    <input type="tel" id="parentPhoneNumber" name="parentPhoneNumber" required>
+                </div>
+            </section>
+
+            <section class="form-section" id="addressDetails">
+                <h2>Address</h2>
+                <div class="input-group">
+                    <label for="addressLineOne">Address Line 1:</label>
+                    <input type="text" id="addressLineOne" name="addressLineOne" required>
+                </div>
+                <div class="input-group">
+                    <label for="addressLineTwo">Address Line 2 (Optional):</label>
+                    <input type="text" id="addressLineTwo" name="addressLineTwo">
+                </div>
+                <div class="input-group">
+                    <label for="cityTown">City/Town:</label>
+                    <input type="text" id="cityTown" name="cityTown" required>
+                </div>
+                <div class="input-group">
+                    <label for="stateProvince">State/Province:</label>
+                    <input type="text" id="stateProvince" name="stateProvince" required>
+                </div>
+                <div class="input-group">
+                    <label for="postalCode">Postal Code:</label>
+                    <input type="text" id="postalCode" name="postalCode" required>
+                </div>
+            </section>
+
+            <section id="reviewDetails">
+                <h2>Review Your Details</h2>
+                <div id="reviewContent">
+                    </div>
+            </section>
+
+            <button type="button" onclick="showReview()">Review and Submit</button>
+            <button type="submit" style="display:none;">Submit Application</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
